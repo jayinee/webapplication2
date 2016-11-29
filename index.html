@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ang App</title>
+</head>
+<body ng-controller="indexController as vm">
+    <h1>My Angular Application</h1>
+
+    <script src="bower_components/angular/angular.js"></script>    
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <!--Modules-->
+    <script src="scripts/modules/store.js"></script>
+
+    <!--Application-->
+    <script src="scripts/modules/app.js"></script>
+
+    <!--Controllers-->
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/products.js"></script>
+
+    <div ui-view>
+    </div>
+</body>
+</html>
